@@ -2,15 +2,15 @@
 <html lang="zh">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>分类 - Glaucus&#39; blog</title>
+<title>标签: Gradle - Glaucus&#39; blog</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta name="keywords" content="日常,Android,Gradle">
+    <meta name="keywords" content="Java Kotin Android Spring">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Glaucus&#39; blog">
-<meta property="og:url" content="http://thinke.cn/categories/index.html">
+<meta property="og:url" content="http://thinke.cn/tags/Gradle/index.html">
 <meta property="og:site_name" content="Glaucus&#39; blog">
 <meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
@@ -105,7 +105,7 @@
                 
                 <a class="navbar-item" href="/archives">文章</a>
                 
-                <a class="navbar-item is-active" href="/categories">分类</a>
+                <a class="navbar-item" href="/categories">分类</a>
                 
                 <a class="navbar-item" href="/tags">标签</a>
                 
@@ -129,35 +129,72 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
-<div class="card widget">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
     <div class="card-content">
-        <div class="menu">
-            <h3 class="menu-label">
-                分类
-            </h3>
-            <ul class="menu-list">
-            <li>
-        <a class="level is-marginless" href="/categories/Android/">
-            <span class="level-start">
-                <span class="level-item">Android</span>
-            </span>
-            <span class="level-end">
-                <span class="level-item tag">1</span>
-            </span>
-        </a></li><li>
-        <a class="level is-marginless" href="/categories/日常/">
-            <span class="level-start">
-                <span class="level-item">日常</span>
-            </span>
-            <span class="level-end">
-                <span class="level-item tag">1</span>
-            </span>
-        </a></li>
-            </ul>
-        </div>
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="/tags">标签</a></li>
+            <li class="is-active"><a href="#" aria-current="page">Gradle</a></li>
+        </ul>
+        </nav>
     </div>
-</div></div>
+</div>
+
+    <div class="card">
+    
+    <div class="card-image">
+        <a href="/2019/01/29/Gradle更新报错-Could-not-GET/" class="image is-7by1">
+            <img class="thumbnail" src="/images/Gradle更新报错-Could-not-GET/thumbnail.webp" alt="android项目更新gradle报错：org-gradle-internal-resource-transport-http-httprequestexception">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-01-29T08:03:34.000Z">2019-01-29</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Android/">Android</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    1 分钟 读完 (大约 221 个字)
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/01/29/Gradle更新报错-Could-not-GET/">android项目更新gradle报错：org-gradle-internal-resource-transport-http-httprequestexception</a>
+            
+        </h1>
+        <div class="content">
+            <p><img src="/images/Gradle更新报错-Could-not-GET/error-message.png" alt="error-message"></p>
+<p>这个问题以前做Android的时候碰到过，Google各种都无果，这次又遇见了，想了好久才想起来，原因是之前在代理设置中添加了本地的socks5代理：</p>
+<p><img src="/images/Gradle更新报错-Could-not-GET/proxy-setting.png" alt="proxy-setting"></p>
+<p>这个代理的设置在下载Gradle的时候很好用，但是在更新android-gradle插件的时候会导致报错，解决方案是修改本地的gradle配置，我是macOS，在用户目录的/Users/XXX/.gradle文件夹下(隐藏文件夹，按住Shift+Command+.可以显示)找到gradle.properties文件，删除或注释相关的代理配置后重新刷新Gradle即可。</p>
+<p>最后再次吐槽国内的网络环境对Android开发真的太不友好了。</p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+</div>
                 
 
 
